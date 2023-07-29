@@ -1,0 +1,60 @@
+@import './base/_null-style';
+
+body {
+	background-color: #333;
+	background-size: 100% 100%;
+	height: 98vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	display: none;
+}
+
+button {
+	display: inline;
+	margin: 5px;
+	background-color: #141420;
+	border-radius: 20px;
+	padding: 13px;
+	color: #fff;
+}
+
+.form {
+	background-color: rgba(#000, 0.5);
+	border: 1px solid rgba(#fff, 1);
+	padding: 15px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	// .form__title
+	&__title {
+		color: #fff;
+		font-size: 18px;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+			'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		margin-bottom: 20px;
+	}
+	// .form__btn-uppload
+	&__btn-uppload {
+		border: 1px solid #4e98ff;
+		color: #4e98ff;
+		box-shadow: 0 0 20px #4e98ff;
+	}
+	// .form__btn-apply
+	&__btn-apply {
+		border: 1px solid #ae35ff;
+		color: #ae35ff;
+		box-shadow: 0 0 20px #ae35ff;
+		&:disabled {
+			border: 1px solid #777;
+			color: #777;
+			box-shadow: 0 0 20px #777;
+		}
+	}
+}
